@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Projek KKA Azmi & Fauziah</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8f5;
+      margin: 0;
+      padding: 0;
+    }
+    /* Landing Page */
+    #landing {
+      text-align: center;
+      padding: 100px;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+    #landing h1 {
+      color: #38963d;
+      font-size: 36px;
+    }
+    #landing p {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+    /* Konten Utama */
+    header {
+      background-color: #389924;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+    }
+    header img {
+      position: absolute;
+      left: 15px;
+      top: 10px;
+      height: 54px;
+    }
+    nav {
+      background-color: #339938;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #c8e6c9;
+    }
+    section {
+      padding: 20px;
+      display: none;
+    }
+    section.active {
+      display: block;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+    h2 {
+      color: #2e7d32;
+    }
+    .calculator {
+      background-color: #e8f5e9;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 400px;
+    }
+    input[type="number"] {
+      width: 80px;
+      padding: 5px;
+      margin: 5px;
+    }
+    button {
+      background-color: #1f5022;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #1f5f23;
+    }
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeOut {
+      from { opacity: 1; }
+      to { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Landing Page -->
+  <div id="landing">
+    <h1>Projek KKA Azmi & Fauziah</h1>
+       <p>Selamat datang di Projek KKA! Anda akan diarahkan ke halaman utama...</p>
+  </div>
+
+  <!-- Halaman Utama -->
+  <div id="main" style="display:none;">
+    <header>
+     <img src="logo2.jpg.jpeg" width="50px" height="70px" alt ="logo Website"
+     <h1>Wasted Zero Challenge</h1>
+      <h1>Bersama kita wujudkan lingkungan bebas sampah<h1>
+    </header>
+
+    <nav>
+      <a onclick="showPage('pembukaan')">Pembukaan</a>
+      <a onclick="showPage('himbauan')">Himbauan</a>
+      <a onclick="showPage('kalkulator')">Kalkulator Sampah</a>
+    </nav>
+
+    <section id="pembukaan" class="active">
+    <h1>🌱 Wasted Zero Challenge ♻️</h1>
+    <p>Bersama Mewujudkan Lingkungan Bersih, Hijau, dan Berkelanjutan</p>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>Selamat Datang</h2>
+
+      <p>
+        Wasted Zero Challenge hadir sebagai gerakan peduli lingkungan yang mengajak seluruh masyarakat untuk bersama-sama menciptakan bumi yang lebih bersih, sehat, hijau, dan berkelanjutan.
+      </p>
+
+      <br>
+
+      <p>
+        Website ini bukan hanya sekadar media informasi, tetapi juga menjadi ruang edukasi, inspirasi, dan aksi nyata untuk meningkatkan kesadaran terhadap permasalahan sampah yang semakin hari semakin serius.
+      </p>
+
+      <br>
+
+      <p>
+        Di era modern seperti sekarang, jumlah sampah terus meningkat seiring dengan tingginya penggunaan barang sekali pakai dan gaya hidup konsumtif. Jika tidak dikelola dengan baik, sampah dapat mencemari tanah, air, udara, bahkan membahayakan kesehatan manusia dan ekosistem.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Konsep 3R (Reduce, Reuse, Recycle)</h2>
+
+      <div class="three-r">
+
+        <div class="box">
+          <h3>🌿 Reduce</h3>
+          <p>
+            Mengurangi penggunaan barang sekali pakai seperti plastik, sedotan, dan styrofoam agar jumlah sampah semakin berkurang.
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>🔄 Reuse</h3>
+          <p>
+            Menggunakan kembali barang yang masih layak pakai agar tidak langsung menjadi sampah dan tetap memiliki manfaat.
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>♻️ Recycle</h3>
+          <p>
+            Mendaur ulang sampah menjadi produk baru yang berguna sehingga membantu mengurangi penumpukan sampah.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📊 Kalkulator Sampah</h2>
+
+      <p>
+        Website ini juga menyediakan fitur Kalkulator Sampah untuk membantu pengguna mengetahui perkiraan jumlah sampah harian yang dihasilkan.
+      </p>
+
+      <div class="highlight">
+        Dengan mengetahui jumlah sampah yang dihasilkan setiap hari, kita dapat lebih sadar terhadap kebiasaan sehari-hari dan mulai melakukan perubahan kecil demi lingkungan yang lebih baik.
+      </div>
+    </div>
+
+    <div class="quote">
+      🌍 “Perubahan besar selalu dimulai dari langkah kecil.”
+    </div>
+
+    <div class="card">
+      <h2>Mari Bergerak Bersama</h2>
+
+      <p>
+        Mulai dari membuang sampah pada tempatnya, mengurangi plastik sekali pakai, hingga mendaur ulang barang bekas — semua tindakan sederhana tersebut dapat memberikan dampak besar bagi masa depan lingkungan.
+      </p>
+
+      <br>
+
+      <p>
+        Mari jadikan Wasted Zero Challenge sebagai awal perubahan menuju gaya hidup yang lebih peduli lingkungan. Bersama-sama, kita bisa menciptakan lingkungan bebas sampah, udara yang lebih bersih, dan bumi yang lebih hijau untuk generasi sekarang maupun generasi mendatang.
+      </p>
+
+      <br>
+
+      <h3 style="color:#2e8b57;">
+        ✨ Karena bumi yang bersih bukan hanya impian, tetapi tanggung jawab kita bersama.
+      </h3>
+    </div>
+
+  </div>
+</p>
+    </section>
+
+    <section id="himbauan">
+      <<h2>🌍 Pesan untuk Kita Semua</h2>
+  <p>Menjaga kebersihan lingkungan bukan hanya tanggung jawab pemerintah atau organisasi besar, tetapi merupakan kewajiban setiap individu. Langkah kecil yang konsisten dapat memberikan dampak besar bagi bumi kita. Berikut beberapa hal yang bisa kita lakukan:</p>
+
+  <h3>1. Pemilahan Sampah</h3>
+  <ul>
+    <li><strong>Sampah organik:</strong> sisa makanan, daun, kulit buah. Bisa diolah menjadi kompos untuk menyuburkan tanah.</li>
+    <li><strong>Sampah anorganik:</strong> plastik, kaca, logam, kertas. Sebaiknya dikumpulkan untuk didaur ulang agar tidak menumpuk di TPA.</li>
+  </ul>
+  <p>Dengan pemilahan yang benar, volume sampah yang berakhir di TPA akan berkurang drastis.</p>
+
+  <h3>2. Mengurangi Penggunaan Plastik</h3>
+  <ul>
+    <li>Membawa tas belanja kain atau anyaman.</li>
+    <li>Menggunakan botol minum isi ulang.</li>
+    <li>Menghindari sedotan plastik, beralih ke stainless atau bambu.</li>
+  </ul>
+  <p>Langkah sederhana ini membantu mengurangi pencemaran laut akibat plastik sekali pakai.</p>
+
+  <h3>3. Mendukung Program Daur Ulang</h3>
+  <ul>
+    <li>Ikut serta dalam program bank sampah.</li>
+    <li>Menjual atau menyumbangkan barang bekas yang masih layak pakai.</li>
+    <li>Mendukung produk berbahan daur ulang untuk memperkuat ekonomi sirkular.</li>
+  </ul>
+
+  <h3>4. Menghemat Energi dan Air</h3>
+  <ul>
+    <li>Mematikan lampu dan peralatan elektronik saat tidak digunakan.</li>
+    <li>Menggunakan air secukupnya saat mencuci atau mandi.</li>
+  </ul>
+  <p>Menghemat energi berarti mengurangi emisi karbon dari pembangkit listrik.</p>
+
+  <h3>5. Edukasi dan Kesadaran</h3>
+  <ul>
+    <li>Mengajarkan anak-anak sejak dini tentang pentingnya menjaga kebersihan lingkungan.</li>
+    <li>Mengadakan kegiatan gotong royong membersihkan lingkungan sekitar.</li>
+    <li>Membagikan informasi tentang dampak pencemaran melalui media sosial.</li>
+  </ul>
+
+  <h3>6. Dampak Positif</h3>
+  <ul>
+    <li>Lingkungan bersih meningkatkan kualitas hidup masyarakat.</li>
+    <li>Mengurangi risiko penyakit akibat lingkungan kotor.</li>
+    <li>Menjaga keindahan alam untuk generasi mendatang.</li>
+  </ul>
+
+  <h3>🌱 Kesimpulan</h3>
+  <p>Menjaga kebersihan lingkungan adalah investasi jangka panjang. Dengan langkah kecil setiap hari, kita menyiapkan warisan berharga berupa bumi yang sehat, bersih, dan layak huni untuk anak cucu kita.</p>
+    </section>
+    
+    <section id="kalkulator">
+      <h2>Kalkulator Sampah</h2>
+      <div class="calculator">
+        <p>Masukkan jumlah sampah harian Anda (dalam kg):</p>
+        <input type="number" id="plastik" placeholder="Plastik"> Plastik<br>
+        <input type="number" id="organik" placeholder="Organik"> Organik<br>
+        <input type="number" id="kertas" placeholder="Kertas"> Kertas<br>
+        <button onclick="hitungSampah()">Hitung Total</button>
+        <p id="hasil"></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Wasted Zero Challenge | Bersama Kita Bisa</p>
+    </footer>
+  </div>
+
+  <script>
+    // Transisi dari landing ke main
+    setTimeout(() => {
+      document.getElementById("landing").style.animation = "fadeOut 2s forwards";
+      setTimeout(() => {
+        document.getElementById("landing").style.display = "none";
+        document.getElementById("main").style.display = "block";
+      }, 2000);
+    }, 3000);
+
+    function showPage(pageId) {
+      document.querySelectorAll("section").forEach(sec => {
+        sec.classList.remove("active");
+      });
+      document.getElementById(pageId).classList.add("active");
+    }
+
+    function hitungSampah() {
+      let plastik = parseFloat(document.getElementById("plastik").value) || 0;
+      let organik = parseFloat(document.getElementById("organik").value) || 0;
+      let kertas = parseFloat(document.getElementById("kertas").value) || 0;
+      let total = plastik + organik + kertas;
+
+      document.getElementById("hasil").innerHTML =
+        "Total sampah harian Anda: " + total + " kg.<br>" +
+        (total > 5 ? "Mari kurangi sampah untuk lingkungan lebih sehat!" : "Bagus! Anda sudah berkontribusi menjaga lingkungan.");
+    }
+  </script>
+</body>
+</html>
